@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--!Font Awesome İcon CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+    <!--! MUSİC PLAYER START  -->
+      <!--? MUSİC İNFO START  -->
+      <div class="container">
+        <img id="music-image" alt="" />
+        <audio id="audio" src=""></audio>
+        <div class="music-details">
+          <h3 class="title"></h3>
+          <h3 class="singer"></h3>
+        </div>
+        <!--? MUSİC İNFO STOP  -->
+        <!--? MUSİC PROGRESS BAR START  -->
+        <div id="progress">
+          <input type="range" id="progress-bar" />
+          <div class="time">
+            <span id="current-time">0.00</span>
+            <span id="duration">0.00</span>
+          </div>
+        </div>
+        <!--? MUSİC PROGRESS BAR STOP  -->
+        <!--? MUSİC CONTROL BUTTONS START  -->
+        <div id="controls">
+          <div class="play-icons">
+            <i id="prev" class="fa-solid fa-backward-step"></i>
+            <i id="play" class="fa-solid fa-play"></i>
+            <i id="next" class="fa-solid fa-forward-step"></i>
+          </div>
+          <!--? MUSİC CONTROL BUTTONS STOP  -->
+          <!--? MUSİC VOLUME AND LİSTS BUTTONS START  -->
+          <div class="volume-icon">
+            <button id="list"><i class="fa-solid fa-list"></i></button>
+            <button class="volume">
+              <i id="volume" class="fa-solid fa-volume-high"></i>
+            </button>
+            <input type="range" id="volume-bar" max="100" value="100" />
+          </div>
+        </div>
+      </div>
+      <!--? MUSİC VOLUME AND LİSTS BUTTONS STOP  -->
+      <!--! MUSİC PLAYER STOP  -->
+      <!--! MUSİC LİST SECTİON START -->
+      <div class="listgroup">
+        <div class="listheader">SONGS</div>
+        <div class="listgroupwrappers"></div>
+      </div>
+      <!--! MUSİC LİST SECTİON STOP -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
