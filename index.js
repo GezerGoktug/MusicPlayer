@@ -124,6 +124,7 @@ class UI {
     player.index = Number(songid);
     UI.display(player.getMusic());
     UI.played();
+    localStorage.setItem("data", JSON.stringify(player.index));
   }
   //! Müzik listesini gösterir
   static listShow() {
